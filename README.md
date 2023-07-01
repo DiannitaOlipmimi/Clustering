@@ -2,11 +2,11 @@
 
 
 ## Table of contents
-- [Definition]()
-- [Step by Step analysis]()
-- [Result]()
-- [Dataset]()
-- [Links]()
+- [Definition](https://github.com/DiannitaOlipmimi/clustering#definition)
+- [Step by Step analysis](https://github.com/DiannitaOlipmimi/clustering#step-by-step-analysis)
+- [Result](https://github.com/DiannitaOlipmimi/clustering#result)
+- [Dataset](https://github.com/DiannitaOlipmimi/clustering#dataset)
+- [Links](https://github.com/DiannitaOlipmimi/clustering#links)
 
 ## Definition
 

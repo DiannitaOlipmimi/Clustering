@@ -25,10 +25,8 @@ Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelomp
 
 ## Result
 
-## Dataset 
-
 ### Definisi Variabel
 
-### Dataset:
+### Dataset
 
 ## Links

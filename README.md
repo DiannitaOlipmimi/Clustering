@@ -65,6 +65,8 @@ Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelomp
 | Papua Barat                | 212            | 94               | 3                   | 1168    | 92      |
 
 ### Produksi Tanaman Sayuran di Indonesia
+| **No**| **Provinsi** | **sawi** | **bayam** | **melinjo** | **Petai** | **jengkol** | **jamur** |
+| -------------------------- | -------------- | ---------------- | ------------------- | ------- | ------- | ------- | ------- |
 | 1 | ACEH | 2661 | 3427 | 10094 | 774 | 1929 | 49219 |
 | 2 | SUMATERA UTARA | 62831 | 20244 | 2621 | 5926 | 3871 | 23493 |
 | 3 | SUMATERA BARAT | 28973 | 4028 | 10726 | 7151 | 8269 | 40110 |

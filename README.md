@@ -1,16 +1,16 @@
 # Clustering
 
+## 📌Table of contents
+- [Definisi](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#definition)
+- [Study Case](https://github.com/DiannitaOlipmimi/regresi_linier#study-case)
+- [Step by Step analysis](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
+- [Result](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
+- [Dataset](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
+- [Links](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
 
-## Table of contents
-- [Definition](https://github.com/DiannitaOlipmimi/clustering#definition)
-- [Step by Step analysis](https://github.com/DiannitaOlipmimi/clustering#step-by-step-analysis)
-- [Result](https://github.com/DiannitaOlipmimi/clustering#result)
-- [Dataset](https://github.com/DiannitaOlipmimi/clustering#dataset)
-- [Links](https://github.com/DiannitaOlipmimi/clustering#links)
+## 📌Definisi
 
-## Definition
-
-### Clustering
+### 📒Clustering
 Analisis cluster merupakan salah satu analisis multivariat yang termasuk dalam metode interdependensi, yaitu variabel bebas 𝑥 atau faktor penyebab tidak dibedakan dengan variabel terikat 𝑦 atau respon. Analisis cluster adalah suatu metode statistik yang mengidentifikasi kelompok sampel berdasarkan karakteristik serupa. Analisis cluster mengelompokkan elemen mirip sebagai objek penelitian yang mempunyai tingkat homogenitas yang tinggi antar objek menjadi cluster yang berbeda dengan tingkat heterogenitas objek yang tinggi antar cluster (Sigit, 2008). 
 
 terdapat 2 jenis clustering yaitu,
@@ -21,12 +21,36 @@ Kemiripan antar objek diukur dengan menggunakan ukuran jarak. Beberapa ukuran ja
 2. clustering non hierarki
 Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelompok yang telah ditentukan terlebih dahulu. Pada analisis non hirarki, data yang dapat digunakan lebih besar dari analisis hirarki. Namun, analisis ini memiliki kelemahan yaitu pada data outlier atau pencilan, ukuran jarak yang digunakan, dan kerelevannan suatu variabel.
 
-## Step by step analysis
+## 📌Study Case
+### **Memprediksi Harga Rumah Menggunakan Regresi Linier Berganda**
 
-## Result
+### 📒 Deskripsi Masalah:
 
-## Dataset
-### Kasus COVID-19 per JUni 2020
+
+### 📒 Data dan Variabel:
+data 
+- *price* : harga rumah
+
+
+### 📒 Tujuan:
+
+
+### 📒 Langkah Analisis:
+✅ *Exploratory Data Analysis* (EDA):
+
+✅ Analisis:
+
+✅ Evaluasi:
+
+## 📌Step by Step Analyis
+✅ Menggunakan R/Rstudio:
+
+✅ Menggunakan Python:
+
+## 📌Result
+
+## 📌Dataset
+**kasus COVID-19 per Juni 2022*
 | **Provinsi**               | **Kasus_Posi** | **Kasus_Sembuh** | **Kasus_meninggal** | **ODP** | **PDP** |
 | -------------------------- | -------------- | ---------------- | ------------------- | ------- | ------- |
 | Aceh                       | 27             | 20               | 1                   | 2221    | 115     |
@@ -64,42 +88,9 @@ Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelomp
 | Papua                      | 1281           | 294              | 7                   | 3424    | 447     |
 | Papua Barat                | 212            | 94               | 3                   | 1168    | 92      |
 
-### Produksi Tanaman Sayuran di Indonesia
-| **No**| **Provinsi** | **sawi** | **bayam** | **melinjo** | **Petai** | **jengkol** | **jamur** |
-| -------------------------- | -------------- | ---------------- | ------------------- | ------- | ------- | ------- | ------- |
-| 1 | ACEH | 2661 | 3427 | 10094 | 774 | 1929 | 49219 |
-| 2 | SUMATERA UTARA | 62831 | 20244 | 2621 | 5926 | 3871 | 23493 |
-| 3 | SUMATERA BARAT | 28973 | 4028 | 10726 | 7151 | 8269 | 40110 |
-| 4 | RIAU | 1968 | 11183 | 1513 | 1998 | 3542 | 72849 |
-| 5 | JAMBI | 6290 | 4644 | 2003 | 1909 | 4101 | 17417 |
-| 6 | SUMATERA SELATAN | 3614 | 4271 | 1882 | 3851 | 5616 | 91776 |
-| 7 | BENGKULU | 29816 | 756 | 415 | 1704 | 3602 | 8500 |
-| 8 | LAMPUNG | 7872 | 6933 | 12169 | 13794 | 12991 | 280971 |
-| 9 | KEP. BANGKA BELITUNG | 1364 | 1287 | 236 | 594 | 109 | 672 |
-| 10 | KEP. RIAU | 3110 | 4618 | 137 | 458 | 378 | 664 |
-| 11 | DKI JAKARTA | 2664 | 3297 | 97 | 9 | 0 | 0 |
-| 12 | JAWA BARAT | 201004 | 29809 | 31606 | 72024 | 13246 | 16992355 |
-| 13 | JAWA TENGAH | 88740 | 10942 | 51213 | 92497 | 10913 | 4431144 |
-| 14 | DI YOGYAKARTA | 3241 | 1438 | 13926 | 3688 | 126 | 392416 |
-| 15 | JAWA TIMUR | 72562 | 11065 | 41623 | 78673 | 176 | 8071803 |
-| 16 | BANTEN | 8535 | 10022 | 54273 | 10198 | 9950 | 164558 |
-| 17 | BALI | 34192 | 1228 | 501 | 1 | 0 | 136310 |
-| 18 | NUSA TENGGARA BARAT | 1571 | 564 | 1179 | 1 | 0 | 49700 |
-| 19 | NUSA TENGGARA TIMUR | 10188 | 3247 | 59 | 330 | 0 | 0 |
-| 20 | KALIMANTAN BARAT | 2961 | 2440 | 652 | 4063 | 5416 | 18006 |
-| 21 | KALIMANTAN TENGAH | 1478 | 1403 | 417 | 1074 | 1011 | 23511 |
-| 22 | KALIMANTAN SELATAN | 2375 | 1565 | 224 | 2837 | 927 | 82290 |
-| 23 | KALIMANTAN TIMUR | 8595 | 4738 | 690 | 773 | 1473 | 11051 |
-| 24 | KALIMANTAN UTARA | 4614 | 1965 | 123 | 403 | 23 | 0 |
-| 25 | SULAWESI UTARA | 15613 | 1233 | 271 | 0 | 0 | 0 |
-| 26 | SULAWESI TENGAH | 7661 | 1467 | 51 | 0 | 28 | 349 |
-| 27 | SULAWESI SELATAN | 10579 | 6515 | 83 | 0 | 23 | 83944 |
-| 28 | SULAWESI TENGGARA | 1047 | 1911 | 71 | 0 | 106 | 355 |
-| 29 | GORONTALO | 16 | 51 | 0 | 0 | 0 | 0 |
-| 30 | SULAWESI BARAT | 558 | 724 | 0 | 0 | 5 | 8084 |
-| 31 | MALUKU | 2645 | 1379 | 0 | 0 | 10 | 0 |
-| 32 | MALUKU UTARA | 107 | 201 | 0 | 0 | 0 | 0 |
-| 33 | PAPUA BARAT | 954 | 651 | 0 | 0 | 2 | 24 |
-| 34 | PAPUA | 5591 | 3031 | 0 | 0 | 11 | 0 |
 
-## Links
+## 📌Links
+
+
+
+

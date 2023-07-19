@@ -50,7 +50,44 @@ Mengelompokan provinsi-provinsi di Indonesia berdasarkan banyaknya kasus COVID-1
 ## 📌Result
 
 ## 📌Dataset
-**kasus COVID-19 per Juni 2022**
+**kasus COVID-19 per Januari 2023**
+|Provinsi|Meninggal|Masih Aktif|Suspek|Probable|Sembuh|
+|:----|:----|:----|:----|:----|:----|
+|Yogyakarta|6079|177|0|0|223946|
+|Sumatera Utara|3390|83|865|38|160211|
+|Sumatera Selatan|3457|16|67444|438|81596|
+|Sumatera Barat|2421|108|0|0|103127|
+|Sulawesi Utara|1259|125|0|0|52986|
+|Sulawesi Tenggara|586|19|0|0|25975|
+|Sulawesi Tengah|1753|90|0|0|61162|
+|Sulawesi Selatan|2573|45|1021|0|145946|
+|Sulawesi Barat|407|5|0|0|15637|
+|Riau|4546|26|0|0|150333|
+|Papua Barat|394|40|0|0|32582|
+|Papua|581|34|1856|64|50613|
+|Nusa Tenggara Timur|1565|69|4094|0|95643|
+|Nusa Tenggara Barat|938|30|0|0|36336|
+|Maluku Utara|335|27|61|4|14516|
+|Maluku|306|8|14069|0|18675|
+|Lampung|4255|115|0|359|73805|
+|Kepulauan Riau|1927|35|0|0|70060|
+|Kalimantan Utara|874|8|1021|0|45265|
+|Kalimantan Timur|5796|56|647979|30|208616|
+|Kalimantan Tengah|1556|4|0|0|57782|
+|Kalimantan Selatan|2599|46|0|0|86270|
+|Kalimantan Barat|1146|55|0|0|66380|
+|Jawa Timur|32271|308|100|751|604693|
+|Jawa Tengah|33991|2455|614835|0|619276|
+|Jawa Barat|16106|1921|8688|276|1216009|
+|Jambi|915|11|190|0|38494|
+|Jakarta Raya|15918|457|109271|13|1521987|
+|Gorontalo|486|128|72|3|13465|
+|Bengkulu|529|1|18770|0|29337|
+|Banten|2987|197|1333|4|362384|
+|Bangka Belitung|1652|10|14195|3397|65526|
+|Bali|4875|81|0|0|167585|
+|Aceh|2267|26|9970|892|42576|
+
 
 ## 📌Links
 

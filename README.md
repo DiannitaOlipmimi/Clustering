@@ -44,6 +44,37 @@ Mengelompokan provinsi-provinsi di Indonesia berdasarkan banyaknya kasus COVID-1
 
 ## 📌Step by Step Analyis
 ✅ Menggunakan R/Rstudio:
+```R
+#standarisasi data
+data_standarisasi = scale(index)
+data_standarisasi_mat = as.matrix(data_standarisasi)
+#View(data_standarisasi_mat)
+#write.csv(data_standarisasi_mat, file = "standarisasi.csv")
+
+#k-means clustering
+#menghitung jarak antar pengamatan
+library(factoextra)
+data_jarak = get_dist(index)
+data_jarak_mat = as.matrix(data_jarak)
+
+#menentukan kluste optimal
+fviz_nbclust(data_jarak_mat, kmeans, method = "wss")
+fviz_nbclust(data_jarak_mat, kmeans, method = "silhouette")
+
+#pembentukan cluster
+kmean = kmeans(data_jarak_mat, centers = 2)
+kmean$size
+kmean$centers
+#write.csv(kmean$centers, file = "centers.csv")
+
+#visualisasi cluster
+library(ggpubr)
+fviz_cluster(kmean, data = index)
+
+#hasil
+hasil = cbind(index, cluster = kmean$cluster)
+hasil
+```
 
 ✅ Menggunakan Python:
 

@@ -36,30 +36,27 @@ Coronavirus (CoV) merupakan keluarga besar virus RNA (Ribonucleic Acid). Virus i
 Mengelompokan provinsi-provinsi di Indonesia berdasarkan banyaknya kasus COVID-19
 
 ### 📒 Langkah Analisis:
-✅ *Exploratory Data Analysis* (EDA):
-
 ✅ Data Preparation:
-1. Load the customer dataset into the analysis environment.
-2. Remove any unnecessary columns or customer IDs that won't contribute to the clustering analysis.
-3. Handle missing values, if any, by imputing them or removing the corresponding records.
+1. Memuat data kasus COVID-19
+2. Melakukan pemilihan variabel yang digunakan
+3. Melakukan Identifikasi awal menggunakan matriks korelasi
+Handle missing values, if any, by imputing them or removing the corresponding records.
 
 ✅Feature Scaling:
-1. Since K-Means clustering is sensitive to the scale of the features, it is essential to scale the numerical features to have mean 0 and variance 1. Common scaling techniques include Min-Max scaling or Standardization (Z-score normalization).
-2. Use the Elbow Method to determine the optimal number of clusters (K) for the K-Means algorithm.
-3. Plot the sum of squared distances (inertia) for different values of K and identify the "elbow" point where the inertia starts to level off.
+1. Melakukan standarisasi data agar hasil clustering K-means menjadi lebih tepat
+2. Menggunakan *Elbow method* untuk menentukan berapa banyak k cluster yang paling optimal
+3. Memilih k cluster menggunakan plot *sum of square distances*
 
 ✅K-Means Clustering:
-1. Apply the K-Means algorithm with the optimal value of K obtained from the Elbow Method.
-2. Assign each customer to their respective cluster based on their feature values.
-3. Retrieve the cluster centroids and cluster assignments for further analysis.
+1. Menggunakan jumlah k cluster yang didapatkan pada *elbow method* pada algoritma K-means 
+2. Memilah masing-masing cluster yang dihasilkan beserta anggotanya
+3. Menghitung *centroid* masing-masing cluster yang telah dihasilkan untuk dianalsis lebih lanjut
 
-✅Cluster Analysis:
-1. Analyze the characteristics of each customer segment obtained from K-Means clustering.
-2. Calculate cluster statistics, such as average purchase amount and purchase frequency, for each cluster.
-3. Visualize the clusters in 2D or 3D space using dimensionality reduction techniques (e.g., PCA or t-SNE) to understand the separation between clusters.
-
-✅ Evaluasi:
-1. Interpret the characteristics of each cluster to understand customer segments' preferences and behaviors.
+✅Evaluasi:
+1. Menganalisis karakteristik atau kesamaan dari setiap cluster
+2. Menghitung statistik deskriptif dari maisng-masing cluster untuk mendapatkan nilai-nilai seperti rata-rata
+3. Memvisualisasikan cluster untuk memudahkan gambaran penempatan cluster berdasarkan *sum of square distances*
+4. Interpretasi masing-masing cluster
 
 ## 📌Step by Step Analyis
 ✅ Menggunakan R/Rstudio:

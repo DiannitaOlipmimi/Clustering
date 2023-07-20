@@ -38,60 +38,28 @@ Mengelompokan provinsi-provinsi di Indonesia berdasarkan banyaknya kasus COVID-1
 ### 📒 Langkah Analisis:
 ✅ *Exploratory Data Analysis* (EDA):
 
-✅ Analisis:
+✅ Data Preparation:
+1. Load the customer dataset into the analysis environment.
+2. Remove any unnecessary columns or customer IDs that won't contribute to the clustering analysis.
+3. Handle missing values, if any, by imputing them or removing the corresponding records.
+
+✅Feature Scaling:
+1. Since K-Means clustering is sensitive to the scale of the features, it is essential to scale the numerical features to have mean 0 and variance 1. Common scaling techniques include Min-Max scaling or Standardization (Z-score normalization).
+2. Use the Elbow Method to determine the optimal number of clusters (K) for the K-Means algorithm.
+3. Plot the sum of squared distances (inertia) for different values of K and identify the "elbow" point where the inertia starts to level off.
+
+✅K-Means Clustering:
+1. Apply the K-Means algorithm with the optimal value of K obtained from the Elbow Method.
+2. Assign each customer to their respective cluster based on their feature values.
+3. Retrieve the cluster centroids and cluster assignments for further analysis.
+
+✅Cluster Analysis:
+1. Analyze the characteristics of each customer segment obtained from K-Means clustering.
+2. Calculate cluster statistics, such as average purchase amount and purchase frequency, for each cluster.
+3. Visualize the clusters in 2D or 3D space using dimensionality reduction techniques (e.g., PCA or t-SNE) to understand the separation between clusters.
 
 ✅ Evaluasi:
-
-
-Title: Customer Segmentation using K-Means Clustering for an E-commerce Company
-
-Company Background:
-An e-commerce company sells various products online. They want to segment their customers based on their purchase behavior to understand different customer groups and tailor marketing strategies to improve customer engagement and maximize sales.
-
-Problem Statement:
-The e-commerce company aims to use K-Means clustering to segment their customers into distinct groups based on their purchasing patterns. They want to gain insights into customer preferences and behaviors to improve personalized marketing and product recommendations.
-
-Data Description:
-The company has collected a dataset containing customer information and purchase history. The dataset includes features such as customer ID, age, gender, total purchase amount, frequency of purchases, and other relevant variables.
-
-Analysis Steps:
-
-Data Preparation:
-
-Load the customer dataset into the analysis environment.
-Remove any unnecessary columns or customer IDs that won't contribute to the clustering analysis.
-Handle missing values, if any, by imputing them or removing the corresponding records.
-Feature Scaling:
-
-Since K-Means clustering is sensitive to the scale of the features, it is essential to scale the numerical features to have mean 0 and variance 1. Common scaling techniques include Min-Max scaling or Standardization (Z-score normalization).
-Elbow Method for Optimal K:
-
-Use the Elbow Method to determine the optimal number of clusters (K) for the K-Means algorithm.
-Plot the sum of squared distances (inertia) for different values of K and identify the "elbow" point where the inertia starts to level off.
-K-Means Clustering:
-
-Apply the K-Means algorithm with the optimal value of K obtained from the Elbow Method.
-Assign each customer to their respective cluster based on their feature values.
-Retrieve the cluster centroids and cluster assignments for further analysis.
-Cluster Analysis:
-
-Analyze the characteristics of each customer segment obtained from K-Means clustering.
-Calculate cluster statistics, such as average purchase amount and purchase frequency, for each cluster.
-Visualize the clusters in 2D or 3D space using dimensionality reduction techniques (e.g., PCA or t-SNE) to understand the separation between clusters.
-Interpretation and Insights:
-
-Interpret the characteristics of each cluster to understand customer segments' preferences and behaviors.
-Identify high-value customer segments that contribute significantly to the company's revenue.
-Explore relationships between customer segments and other customer attributes (e.g., age, gender) to uncover meaningful patterns.
-Marketing and Product Recommendations:
-
-Tailor marketing strategies and promotional offers for each customer segment based on their preferences and behaviors.
-Recommend personalized product recommendations to customers based on their cluster membership.
-Implement targeted marketing campaigns to improve customer engagement and retention within each cluster.
-Evaluation and Monitoring:
-
-Evaluate the effectiveness of the customer segmentation strategy in terms of improved sales and customer satisfaction.
-Continuously monitor customer behavior and update the clustering analysis periodically to adapt to changing customer preferences.
+1. Interpret the characteristics of each cluster to understand customer segments' preferences and behaviors.
 
 ## 📌Step by Step Analyis
 ✅ Menggunakan R/Rstudio:

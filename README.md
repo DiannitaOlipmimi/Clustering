@@ -28,9 +28,9 @@ Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelomp
 Coronavirus (CoV) merupakan keluarga besar virus RNA (Ribonucleic Acid). Virus ini dapat menyebar dengan cepat dengan sumber infeksinya adalah penderita dengan pneumonia COVID-19 (WHO, 2020).nalisis cluster merupakan salah satu analisis multivariat yang termasuk dalam metode interdependensi, yaitu variabel bebas 𝑥 atau faktor penyebab tidak dibedakan dengan variabel terikat 𝑦 atau respon.-means clustering adalah teknik pengelompokan yang berupaya untuk mempartisi N individu dalam sebuah dataset multivariate kedalam kelompok atau k kelompok. Metode K-Means sering digunakan untuk pengelompokkan data yang besar dengan asumsi tidak adanya korelasi antar variabel independen atau multikolinieritas.
 
 ### 📒 Data dan Variabel:
-- **Kasus Meninggal**: Total kasus angka kematian akibat COVID-19 sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
-- **Kasus Masih Sakit**: Total kasus aktif atau pasien COVID-19 yang menerima perawatan sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
-- **Kasus Sembuh**: Total kasus angka sembuh dari COVID-19 sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
+- `Kasus Meninggal`: Total kasus angka kematian akibat COVID-19 sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
+- `Kasus Masih Sakit`: Total kasus aktif atau pasien COVID-19 yang menerima perawatan sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
+- `Kasus Sembuh`: Total kasus angka sembuh dari COVID-19 sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
 
 ### 📒 Tujuan:
 Mengelompokan provinsi-provinsi di Indonesia berdasarkan banyaknya kasus COVID-19
@@ -92,8 +92,6 @@ hasil = cbind(index, cluster = kmean$cluster)
 hasil
 ```
 
-✅ Menggunakan Python:
-
 ## 📌Result
 
 ## 📌Dataset
@@ -135,8 +133,10 @@ hasil
 |Bali|4875|81|0|0|167585|
 |Aceh|2267|26|9970|892|42576|
 
-
 ## 📌Links
+https://covid19.go.id/id
+
+https://infeksiemerging.kemkes.go.id/dashboard/covid-19
 
 
 

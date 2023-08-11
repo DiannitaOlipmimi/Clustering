@@ -12,11 +12,12 @@ Kemiripan antar objek diukur dengan menggunakan ukuran jarak. Beberapa ukuran ja
 2. clustering non hierarki
 Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelompok yang telah ditentukan terlebih dahulu. Pada analisis non hirarki, data yang dapat digunakan lebih besar dari analisis hirarki. Namun, analisis ini memiliki kelemahan yaitu pada data outlier atau pencilan, ukuran jarak yang digunakan, dan kerelevannan suatu variabel.
 
-Deskripsi Masalah:
+⛳Deskripsi Masalah:
 
 
-Tujuan:
+⛳Tujuan:
 
+Mengelompokan Provinsi di Indonesia berdasarkan kasus COVID-19 menggunakan algoritma K-Means
 
 ## 📌Table of contents
 - [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
@@ -24,18 +25,16 @@ Tujuan:
 - [Links](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
 
 
-### **Mengelompokan Provinsi di Indonesia berdasarkan kasus COVID-19 menggunakan algoritma K-Means**
+## 🧵Data dan Variabel:
+
+**📒Dataset:**
+
+**📒Variabel:**
 
 
+## 🧵Result
+**📒 Langkah Analisis:**
 
-### 📒 Data dan Variabel:
-- `Kasus Meninggal`: Total kasus angka kematian akibat COVID-19 sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
-- `Kasus Masih Sakit`: Total kasus aktif atau pasien COVID-19 yang menerima perawatan sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
-- `Kasus Sembuh`: Total kasus angka sembuh dari COVID-19 sejak hari pertama hingga update data baru menurut Provinsi di Indonesia
-
-
-
-### 📒 Langkah Analisis:
 ✅ Data Preparation:
 1. Memuat data kasus COVID-19
 2. Melakukan pemilihan variabel yang digunakan
@@ -58,8 +57,7 @@ Handle missing values, if any, by imputing them or removing the corresponding re
 3. Memvisualisasikan cluster untuk memudahkan gambaran penempatan cluster berdasarkan *sum of square distances*
 4. Interpretasi masing-masing cluster
 
-## 📌Step by Step Analyis
-✅ Menggunakan R/Rstudio:
+**✅ Menggunakan R/Rstudio:**
 ```R
 #standarisasi data
 data_standarisasi = scale(index)
@@ -92,52 +90,7 @@ hasil = cbind(index, cluster = kmean$cluster)
 hasil
 ```
 
-## 📌Result
-
-## 📌Dataset
-**kasus COVID-19 per Januari 2023**
-|Provinsi|Meninggal|Masih Aktif|Suspek|Probable|Sembuh|
-|:----|:----|:----|:----|:----|:----|
-|Yogyakarta|6079|177|0|0|223946|
-|Sumatera Utara|3390|83|865|38|160211|
-|Sumatera Selatan|3457|16|67444|438|81596|
-|Sumatera Barat|2421|108|0|0|103127|
-|Sulawesi Utara|1259|125|0|0|52986|
-|Sulawesi Tenggara|586|19|0|0|25975|
-|Sulawesi Tengah|1753|90|0|0|61162|
-|Sulawesi Selatan|2573|45|1021|0|145946|
-|Sulawesi Barat|407|5|0|0|15637|
-|Riau|4546|26|0|0|150333|
-|Papua Barat|394|40|0|0|32582|
-|Papua|581|34|1856|64|50613|
-|Nusa Tenggara Timur|1565|69|4094|0|95643|
-|Nusa Tenggara Barat|938|30|0|0|36336|
-|Maluku Utara|335|27|61|4|14516|
-|Maluku|306|8|14069|0|18675|
-|Lampung|4255|115|0|359|73805|
-|Kepulauan Riau|1927|35|0|0|70060|
-|Kalimantan Utara|874|8|1021|0|45265|
-|Kalimantan Timur|5796|56|647979|30|208616|
-|Kalimantan Tengah|1556|4|0|0|57782|
-|Kalimantan Selatan|2599|46|0|0|86270|
-|Kalimantan Barat|1146|55|0|0|66380|
-|Jawa Timur|32271|308|100|751|604693|
-|Jawa Tengah|33991|2455|614835|0|619276|
-|Jawa Barat|16106|1921|8688|276|1216009|
-|Jambi|915|11|190|0|38494|
-|Jakarta Raya|15918|457|109271|13|1521987|
-|Gorontalo|486|128|72|3|13465|
-|Bengkulu|529|1|18770|0|29337|
-|Banten|2987|197|1333|4|362384|
-|Bangka Belitung|1652|10|14195|3397|65526|
-|Bali|4875|81|0|0|167585|
-|Aceh|2267|26|9970|892|42576|
-
-## 📌Links
-https://covid19.go.id/id
-
-https://infeksiemerging.kemkes.go.id/dashboard/covid-19
-
+## 🧵Links
 
 
 

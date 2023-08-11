@@ -29,6 +29,14 @@ Mengelompokan Provinsi di Indonesia berdasarkan kasus COVID-19 menggunakan algor
 
 **📒Dataset:**
 
+| CustomerID | Gender | Age | Annual Income (k$) | Spending Score (1-100) |
+| ---------- | ------ | --- | ------------------ | ---------------------- |
+| 1          | Male   | 19  | 15                 | 39                     |
+| 2          | Male   | 21  | 15                 | 81                     |
+| 3          | Female | 20  | 16                 | 6                      |
+| 4          | Female | 23  | 16                 | 77                     |
+| 5          | Female | 31  | 17                 | 40                     |
+
 **📒Variabel:**
 
 

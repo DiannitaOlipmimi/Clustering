@@ -1,4 +1,4 @@
-#K-Means Clustering on Mall Customer
+# K-Means Clustering on Mall Customer
 
 **Clustering**
 
@@ -20,9 +20,9 @@ Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelomp
 Mengelompokan Provinsi di Indonesia berdasarkan kasus COVID-19 menggunakan algoritma K-Means
 
 ## 📌Table of contents
-- [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
-- [Result](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
-- [Links](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
+- [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/Clustering_on_Mall_Customer#data-dan-variabel)
+- [Result](https://github.com/DiannitaOlipmimi/Clustering_on_Mall_Customer#result)
+- [Links](https://github.com/DiannitaOlipmimi/Clustering_on_Mall_Customer#links)
 
 
 ## 🧵Data dan Variabel:

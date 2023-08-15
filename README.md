@@ -61,10 +61,25 @@ Melakukan segmentasi dengan menggunakan algoritma K-Means pada customer mall
 3. Melakukan Identifikasi awal menggunakan matriks korelasi
 Handle missing values, if any, by imputing them or removing the corresponding records.
 
+    ```R
+    # pengecekan data
+    dim(data)
+    names(data)
+
+    # missing value 
+    sum(is.na(data)) # total keseluruhan NA bila ada
+    colSums(is.na(data)) # total NA per kolom
+
+    # Statistik Deskriptif 
+    #install.packages("pastecs")
+    library(pastecs)
+    stat.desc(data)
+    ```
+
 ✅ Exploratory Data Analysis (EDA):
 1. Membuat scatter plot untuk melihat hubungan masing-masing variabel
 
-    
+    ![Alt text](Rplot1.png)
 
     berdasarkan plot yang terbentuk:
     - Age VS Annual Income memiliki hubungan yang lemah bahkan hampir tidak ada
@@ -73,23 +88,85 @@ Handle missing values, if any, by imputing them or removing the corresponding re
 
 2. Membuat Bar plot untuk melihat lebih jauh mengenai variabel 
 
+    ![Alt text](Rplot2.png)
+
+    ![Alt text](Rplot3.png)
+
+3. Melakukan Pengecekan Outlier
     
+    ![Alt text](Rplot4.png)
+
+4. Identifikasi lebih lanjut dengan Matrix Correlation
+
+    ![Alt text](Rplot5.png)
 
 ✅Feature Scaling:
-1. Melakukan standarisasi data agar hasil clustering K-means menjadi lebih tepat
-2. Menggunakan *Elbow method* untuk menentukan berapa banyak k cluster yang paling optimal
-3. Memilih k cluster menggunakan plot *sum of square distances*
+1. Menguji asumsi K-Means clustering (no multikolinieritas) dengan nilai VIF 
+
+    ```R
+    #uji asumsi multikolinieritas
+    library(car)
+
+    Gender=lm(index$Gender~index$Age+index$Annual.Income..k..+index$Spending.Score..1.100., new_data = index)
+    age=lm(index$Age~index$Gender+index$Annual.Income..k..+index$Spending.Score..1.100., new_data = index)
+    annual=lm(index$Annual.Income..k..~index$Spending.Score..1.100.+index$Age+index$Gender, new_data = index)
+    spending=lm(index$Spending.Score..1.100.~index$Age+index$Gender+index$Annual.Income..k.., new_data = index)
+
+    #membuat function untuk menghitung nilai VIF
+    vif_value = function(model){
+    #mengambil nilai r squared
+    summary_value = summary(model)
+    r_squared = summary_value$r.squared
+    
+    #menghitung VIF
+    vif_val = 1/(1-r_squared)
+    print(vif_val)
+    }
+
+    vif_value(Gender)
+    vif_value(age)
+    vif_value(annual)
+    vif_value(spending)
+    ```
+
+2. Melakukan standarisasi data agar hasil clustering K-means menjadi lebih tepat
+
+    ```R
+    #standarisasi data
+    data_standarisasi = scale(index)
+    data_standarisasi_mat = as.matrix(data_standarisasi)
+    #View(data_standarisasi_mat)
+    #write.csv(data_standarisasi_mat, file = "standarisasi.csv")
+
+    ```
+
 
 ✅K-Means Clustering:
-1. Menggunakan jumlah k cluster yang didapatkan pada *elbow method* pada algoritma K-means 
+1. Menggunakan *Elbow method* untuk menentukan berapa banyak k cluster yang paling optimal
+
+    ![Alt text](Rplot6.png)
+
+    ![Alt text](Rplot7.png) 
+
 2. Memilah masing-masing cluster yang dihasilkan beserta anggotanya
 3. Menghitung *centroid* masing-masing cluster yang telah dihasilkan untuk dianalsis lebih lanjut
+
+    ![Alt text](Rplot8.png)
+
 
 ✅Evaluasi:
 1. Menganalisis karakteristik atau kesamaan dari setiap cluster
 2. Menghitung statistik deskriptif dari maisng-masing cluster untuk mendapatkan nilai-nilai seperti rata-rata
 3. Memvisualisasikan cluster untuk memudahkan gambaran penempatan cluster berdasarkan *sum of square distances*
 4. Interpretasi masing-masing cluster
+
+    | Profil          | Gender | Age  | Annual.Income..k.. | Spending.Score..1.100. | cluster |
+    | --------------- | ------ | ---- | ------------------ | ---------------------- | ------- |
+    | kluster1 | 1      | 30   | 76                 | 81                     | 1       |
+    | kluster2 | 1      | 45.5 | 24.5               | 16                     | 2       |
+    | kluster3 | 1      | 51   | 54                 | 48                     | 3       |
+    | kluster4 | 2      | 41.5 | 86.5               | 15                     | 4       |
+    | kluster5 | 1      | 26   | 57.5               | 53                     | 5       |
 
 ## 🧵Links
 

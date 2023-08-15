@@ -12,19 +12,20 @@ Kemiripan antar objek diukur dengan menggunakan ukuran jarak. Beberapa ukuran ja
 2. clustering non hierarki
 Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelompok yang telah ditentukan terlebih dahulu. Pada analisis non hirarki, data yang dapat digunakan lebih besar dari analisis hirarki. Namun, analisis ini memiliki kelemahan yaitu pada data outlier atau pencilan, ukuran jarak yang digunakan, dan kerelevannan suatu variabel.
 
-⛳Context:
+**⛳Context:**
 
 This data set is created only for the learning purpose of the customer segmentation concepts , also known as market basket analysis . I will demonstrate this by using unsupervised ML technique (KMeans Clustering Algorithm) in the simplest form.
 
-⛳Content:
+**⛳Content:**
 
 You are owing a supermarket mall and through membership cards , you have some basic data about your customers like Customer ID, age, gender, annual income and spending score.
 Spending Score is something you assign to the customer based on your defined parameters like customer behavior and purchasing data.
 
-⛳Deskripsi Masalah:
+**⛳Deskripsi Masalah:**
+
 You own the mall and want to understand the customers like who can be easily converge [Target Customers] so that the sense can be given to marketing team and plan the strategy accordingly.
 
-⛳Tujuan:
+**⛳Tujuan:**
 
 Melakukan segmentasi dengan menggunakan algoritma K-Means pada customer mall
 

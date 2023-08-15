@@ -55,15 +55,15 @@ grid.arrange(plot6, plot7,
              nrow = 2, ncol = 2)
 
 # mencari limit outlier
-upper_limit_bmi = quantile(data$Annual.Income..k..,0.75)+1.5*IQR(data$Annual.Income..k..)
-lower_limit_bmi = quantile(data$Annual.Income..k..,0.25)-1.5*IQR(data$Annual.Income..k..)
+upper_limit = quantile(data$Annual.Income..k..,0.75)+1.5*IQR(data$Annual.Income..k..)
+lower_limit = quantile(data$Annual.Income..k..,0.25)-1.5*IQR(data$Annual.Income..k..)
 
 # mencari letak outlier pada data
-outlier=data[!(data$Annual.Income..k.. > lower_limit_bmi & data$Annual.Income..k.. < upper_limit_bmi ),]
+outlier=data[!(data$Annual.Income..k.. > lower_limit & data$Annual.Income..k.. < upper_limit),]
 outlier
 
 # membuat data baru tanpa outlier
-new_data=data[!(data$Annual.Income..k.. < lower_limit_bmi & data$Annual.Income..k.. > upper_limit_bmi ),]
+new_data=data[!(data$Annual.Income..k.. < lower_limit & data$Annual.Income..k.. > upper_limit),]
 head(new_data)
 
 # Matriks korelasi
@@ -79,10 +79,10 @@ head(index)
 #uji asumsi multikolinieritas
 library(car)
 
-Gender=lm(index$Gender~index$Age+index$Annual.Income..k..+index$Spending.Score..1.100.,data = index)
-age=lm(index$Age~index$Gender+index$Annual.Income..k..+index$Spending.Score..1.100.,data = index)
-annual=lm(index$Annual.Income..k..~index$Spending.Score..1.100.+index$Age+index$Gender,data = index)
-spending=lm(index$Spending.Score..1.100.~index$Age+index$Gender+index$Annual.Income..k..,data = index)
+Gender=lm(index$Gender~index$Age+index$Annual.Income..k..+index$Spending.Score..1.100., new_data = index)
+age=lm(index$Age~index$Gender+index$Annual.Income..k..+index$Spending.Score..1.100., new_data = index)
+annual=lm(index$Annual.Income..k..~index$Spending.Score..1.100.+index$Age+index$Gender, new_data = index)
+spending=lm(index$Spending.Score..1.100.~index$Age+index$Gender+index$Annual.Income..k.., new_data = index)
 
 #membuat function untuk menghitung nilai VIF
 vif_value = function(model){
@@ -124,7 +124,7 @@ kmean$centers
 
 #visualisasi cluster
 library(ggpubr)
-fviz_cluster(kmean, data = index, ggtheme = theme_minimal())
+fviz_cluster(kmean, new_datadata = index, ggtheme = theme_minimal())
 
 #hasil
 hasil = cbind(index, cluster = kmean$cluster)

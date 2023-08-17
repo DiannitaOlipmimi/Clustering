@@ -88,7 +88,9 @@ Handle missing values, if any, by imputing them or removing the corresponding re
     
     ![Alt text](Rplot4.png)
 
-4. Identifikasi lebih lanjut dengan Matrix Correlation
+4. Mengidentifikasi Outlier dan menghapusnya
+
+5. Identifikasi lebih lanjut dengan Matrix Correlation
 
     ![Alt text](Rplot5.png)
 
@@ -159,6 +161,15 @@ Handle missing values, if any, by imputing them or removing the corresponding re
     | kluster3 | 1      | 51   | 54                 | 48                     | 3       |
     | kluster4 | 2      | 41.5 | 86.5               | 15                     | 4       |
     | kluster5 | 1      | 26   | 57.5               | 53                     | 5       |
+
+    dari hasil diatas dapat diketahui:
+    - customer mall dapat dibedakan menjadi 5 kategori dengan tingkatan pada setiap variabelnya, sangat tinggi, tinggi, sedang, rendah, sangat rendah.
+    - kluster 1 merupakan customer dengan spending score sangat tinggi, annual income tinggi, dengan rata-rata umur 30 dan gender Female atau perempuan.
+    - kluster 2 merupakan customer dengan spending score rendah, dengan rata-rata annual income sangat rendah dan umur 45.5 tahun.
+    - kluster 3 merupakan customer dengan spending score sedang, annual income rendahdengan rata-rata umur 51 dan gender perempuan.
+    - kluster 4 merupakan customer dengan spending score sangat rendah, rata-rata annual income tinggi dengan rata-rata umur 41.5 dan gender male.
+    - kluster 5 merupakan customer dengan spending score tinggi, anuual income sedang dengan rata-rata umur 26 dan gender female.
+    - kepada manager mall dapat dilaporkan bahwa kluster 1 dan 5 dapat menjadi customer target penjualan dengan pertimbangan spending score yang sangat tinggo dan tinggi.
 
 ## 🧵Links
 

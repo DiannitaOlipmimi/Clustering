@@ -6,28 +6,19 @@ Analisis cluster merupakan salah satu analisis multivariat yang termasuk dalam m
 
 terdapat 2 jenis clustering yaitu,
 1. clustering hierarki
-Analisis kelompok merupakan teknik peubah ganda yang mempunyai tujuan utama untuk mengelompokkan objek-objek berdasarkan kemiripan karakteristik yang dimilikinya. Karakteristik objek-objek dalam suatu kelompok memiliki tingkat kemiripan yang tinggi, sedangkan karakteristik antar objek pada suatu kelompok dengan kelompok lain memiliki tingkat kemiripan yang rendah.
-Kemiripan antar objek diukur dengan menggunakan ukuran jarak. Beberapa ukuran jarak yang sering digunakan antara lain jarak Euclid, jarak mahalanobis, jarak Cityblock (Manhattan), dan lain-lain.
+
+    Analisis kelompok merupakan teknik peubah ganda yang mempunyai tujuan utama untuk mengelompokkan objek-objek berdasarkan kemiripan karakteristik yang dimilikinya. Karakteristik objek-objek dalam suatu kelompok memiliki tingkat kemiripan yang tinggi, sedangkan karakteristik antar objek pada suatu kelompok dengan kelompok lain memiliki tingkat kemiripan yang rendah.
 
 2. clustering non hierarki
-Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelompok yang telah ditentukan terlebih dahulu. Pada analisis non hirarki, data yang dapat digunakan lebih besar dari analisis hirarki. Namun, analisis ini memiliki kelemahan yaitu pada data outlier atau pencilan, ukuran jarak yang digunakan, dan kerelevannan suatu variabel.
-
-**⛳Context:**
-
-This data set is created only for the learning purpose of the customer segmentation concepts , also known as market basket analysis . I will demonstrate this by using unsupervised ML technique (KMeans Clustering Algorithm) in the simplest form.
-
-**⛳Content:**
-
-You are owing a supermarket mall and through membership cards , you have some basic data about your customers like Customer ID, age, gender, annual income and spending score.
-Spending Score is something you assign to the customer based on your defined parameters like customer behavior and purchasing data.
+    Analisis kelompok non hirarki merupakan pengelompokan objek dengan jumlah kelompok yang telah ditentukan terlebih dahulu. Pada analisis non hirarki, data yang dapat digunakan lebih besar dari analisis hirarki. Namun, analisis ini memiliki kelemahan yaitu pada data outlier atau pencilan, ukuran jarak yang digunakan, dan kerelevannan suatu variabel.
 
 **⛳Deskripsi Masalah:**
 
-You own the mall and want to understand the customers like who can be easily converge [Target Customers] so that the sense can be given to marketing team and plan the strategy accordingly.
+Terdapat Supermarket yang memiliki data kartu member. data ini mengandung beberapa informasi dasar pengunjung mall atau customer. manager mall ini ingin mengetahui customer yang dapat dijadikan target penjualan berdasarkan informasi dasar yang terapat dalam kartu member.
 
 **⛳Tujuan:**
 
-Melakukan segmentasi dengan menggunakan algoritma K-Means pada customer mall
+Untuk melihat konsumen yang dapat dijadikan target penjulanan maka dilakukan segmentasi dengan menggunakan algoritma K-Means pada customer mall.
 
 ## 📌Table of contents
 - [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/Clustering_on_Mall_Customer#data-dan-variabel)
